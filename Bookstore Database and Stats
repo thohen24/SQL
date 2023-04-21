@@ -1,23 +1,23 @@
 --Create a bookstore database.
 
-CREATE TABLE bookstore (id INTEGER, book TEXT, size TEXT, avg_rating TEXT, price INTEGER);
+CREATE TABLE bookstore (id INTEGER PRIMARY KEY AUTOINCREMENT, book TEXT, size TEXT, avg_rating TEXT, price INTEGER);
 
-INSERT INTO bookstore VALUES (1, "Book 1", "Large", 4.5, 10);
-INSERT INTO bookstore VALUES (2, "Book 2", "Large", 4, 8);
-INSERT INTO bookstore VALUES (3, "Book 3", "Medium", 4.5, 10);
-INSERT INTO bookstore VALUES (4, "Book 4", "Large", 4, 8);
-INSERT INTO bookstore VALUES (5, "Book 5", "Small", 5, 12);
-INSERT INTO bookstore VALUES (6, "Book 6", "Large", 4, 8);
-INSERT INTO bookstore VALUES (7, "Book 7", "Medium", 4.5, 10);
-INSERT INTO bookstore VALUES (8, "Book 8", "Small", 4, 8);
-INSERT INTO bookstore VALUES (9, "Book 9", "Large", 4.5, 10);
-INSERT INTO bookstore VALUES (10, "Book 10", "Large", 4, 8);
-INSERT INTO bookstore VALUES (11, "Book 11", "Medium", 4.5, 10);
-INSERT INTO bookstore VALUES (12, "Book 12", "Large", 4, 8);
-INSERT INTO bookstore VALUES (13, "Book 13", "Small", 5, 12);
-INSERT INTO bookstore VALUES (14, "Book 14", "Large", 4, 8);
-INSERT INTO bookstore VALUES (15, "Book 15", "Medium", 4.5, 10);
-INSERT INTO bookstore VALUES (16, "Book 16", "Small", 4, 8);
+INSERT INTO bookstore VALUES ("Book 1", "Large", 4.5, 10);
+INSERT INTO bookstore VALUES ("Book 2", "Large", 4, 8);
+INSERT INTO bookstore VALUES ("Book 3", "Medium", 4.5, 10);
+INSERT INTO bookstore VALUES ("Book 4", "Large", 4, 8);
+INSERT INTO bookstore VALUES ("Book 5", "Small", 5, 12);
+INSERT INTO bookstore VALUES ("Book 6", "Large", 4, 8);
+INSERT INTO bookstore VALUES ("Book 7", "Medium", 4.5, 10);
+INSERT INTO bookstore VALUES ("Book 8", "Small", 4, 8);
+INSERT INTO bookstore VALUES ("Book 9", "Large", 4.5, 10);
+INSERT INTO bookstore VALUES ("Book 10", "Large", 4, 8);
+INSERT INTO bookstore VALUES ("Book 11", "Medium", 4.5, 10);
+INSERT INTO bookstore VALUES ("Book 12", "Large", 4, 8);
+INSERT INTO bookstore VALUES ("Book 13", "Small", 5, 12);
+INSERT INTO bookstore VALUES ("Book 14", "Large", 4, 8);
+INSERT INTO bookstore VALUES ("Book 15", "Medium", 4.5, 10);
+INSERT INTO bookstore VALUES ("Book 16", "Small", 4, 8);
 
 --Display the database ordered by price, highest to lowest.
 SELECT * FROM bookstore ORDER BY price DESC;
